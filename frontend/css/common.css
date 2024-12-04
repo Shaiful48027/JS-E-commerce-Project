@@ -55,11 +55,11 @@ header nav ul li a:hover{
 }
 #productSection{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 20px;
 }
 #productSection .productCard{
-    padding: 30px 20px;
+    padding: 10px 10px;
     background-color: antiquewhite;
     border-radius: 8px;
     border: 1px solid whitesmoke;
@@ -75,7 +75,7 @@ header nav ul li a:hover{
     font-weight: 700;
 }
 #productSection .productCard p{
-    font-size: 18px;
+    font-size: 16px;
     line-height: 26px;
 }
 #productSection .productCard button{

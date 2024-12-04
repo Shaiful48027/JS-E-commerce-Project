@@ -1,6 +1,25 @@
 
-import productCards from "../js/productCard.js"
+import productCards from "../js/productCard.js" 
 
-const productDesign = document.getElementById('productSection');
+function loadProduct(){
+    const url = 'http://localhost:5000/products';
 
-productDesign.innerHTML = productCards();
+    fetch(url)
+    .then(res => res.json())
+    .then(res => printData(res))
+}
+loadProduct();
+
+
+function printData(products){
+
+    const productDesign = document.getElementById('productSection');
+
+    let htmlCode = ``;
+
+    products.forEach(product =>{
+        htmlCode += productCards(product);
+    });
+
+    productDesign.innerHTML = htmlCode;
+}

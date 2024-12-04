@@ -21,7 +21,7 @@
 
 
 function sliderImage(){
-    const url =  './data.json';
+    const url =  'http://localhost:5000/slider';
 
     fetch(url)
     .then(res => res.json())
